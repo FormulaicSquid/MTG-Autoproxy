@@ -52,7 +52,7 @@ function call_python(card_name, file_path, set) {
      */
 
     // default to Windows command
-    var python_command = "py \"" + file_path + "/scripts/get_card_info.py\" \"" + card_name + "\" \"" + set + "\"";
+    var python_command = "python \"" + file_path + "/scripts/get_card_info.py\" \"" + card_name + "\" \"" + set + "\"";
     if ($.os.search(/windows/i) === -1) {
         // macOS
         python_command = "/usr/local/bin/python3 \"" + file_path + "/scripts/get_card_info.py\" \"" + card_name + "\" \"" + set + "\" >> " + file_path + "/scripts/debug.log 2>&1";
