@@ -7,7 +7,7 @@ var SilvanExtendedTemplate = Class({
 
     extends_: NormalTemplate,
     template_file_name: function () {
-        return "Silvan/extended";
+        return "SilvanMTG/extended";
     },
     template_suffix: function () {
         return "Extended";
@@ -91,7 +91,7 @@ var SilvanMDFCBackTemplate = Class({
 
     extends_: NormalTemplate,
     template_file_name: function () {
-		return "Silvan/extended-mdfc-back";
+		return "SilvanMTG/extended-mdfc-back";
     },
     dfc_layer_group: function () {
 		return LayerNames.MDFC_BACK;
@@ -176,7 +176,7 @@ var SilvanMDFCFrontTemplate = Class({
 
     extends_: SilvanMDFCBackTemplate,
     template_file_name: function () {
-        return "Silvan/extended-mdfc-front";
+        return "SilvanMTG/extended-mdfc-front";
     },
     dfc_layer_group: function () {
         return LayerNames.MDFC_FRONT;
